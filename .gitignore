@@ -15,6 +15,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+*.pid
+*.pid.lock
 
 # Environment files
 .env
@@ -31,6 +33,17 @@ coverage/
 # Vite cache
 .vite/
 **/.vite/
+
+# Tooling caches
+.cache/
+**/.cache/
+.eslintcache
+
+# Local env overrides
+*.local
+
+# TypeScript incremental build info
+*.tsbuildinfo
 
 # OS files
 .DS_Store

@@ -1,8 +1,15 @@
 const { Pool } = require('pg');
 require('dotenv').config();
 
+const databaseUrl = process.env.DATABASE_URL;
+const hasDatabaseUrl = typeof databaseUrl === 'string' && databaseUrl.trim() !== '';
+
+if (!hasDatabaseUrl) {
+    throw new Error('DATABASE_URL is missing. Create backend/.env from backend/.env.example and set a valid PostgreSQL connection string.');
+}
+
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL,
+    connectionString: databaseUrl,
 });
 
 pool.on('connect', () => {
