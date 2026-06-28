@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                     <Link to="/" className="flex items-center gap-2 text-primary-600 dark:text-primary-500 font-bold text-lg">
                         <FaGamepad />
-                        <span>GameRank</span>
+                        <span>Tales Of Games</span>
                     </Link>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                         &copy; {new Date().getFullYear()} GameRank. Game data provided by RAWG API.

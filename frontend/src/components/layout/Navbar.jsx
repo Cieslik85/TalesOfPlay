@@ -32,7 +32,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-16">
                     <Link to="/" className="flex items-center gap-2 text-primary-600 dark:text-primary-500 font-bold text-xl">
                         <FaGamepad />
-                        <span>GameRank</span>
+                        <span>Tales Of Play</span>
                     </Link>
 
                     <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-md mx-6">
